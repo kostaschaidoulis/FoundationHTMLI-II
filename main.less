@@ -1,0 +1,245 @@
+/* ------ IMPORT FONTS ------- */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+@import 'stylesheets/media.less';
+
+/* ------ LESS COLORS VARIABKES ------ */
+
+@white: #fff;
+
+@backgroundColor: hsla(204, 81%, 28%, 1);
+
+@hoverColor: #1683CC;
+
+@fontColor: #1CA4FF;
+
+
+/* ----- ELEMENT SELECTORS ----- */
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+
+/* ----- CLASS SELECTORS ----- */
+
+
+.navbar.navbar-default .navbar-collapse .dropdown-menu {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.navbar {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background-color: @backgroundColor;
+}
+
+.navbar-brand {
+    color: @white !important;
+}
+
+.navbar-brand:hover {
+    color: @hoverColor !important;
+}
+
+.col-sm-4 {
+    p {
+        display: inline-block;
+        color: @backgroundColor;
+        font-size: 3.5em;
+        margin-top: 0.6em;
+    }
+}
+
+.centeredPar {
+	font-size: 2em;
+}
+
+.col-sm-4:first-child {
+	margin-top: 3em;
+}
+
+.col-sm-4:last-child {
+	margin-top: 3em;
+}
+
+.sphere {
+    width: 10em;
+    height: 10em;
+    border-radius: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    border: 0.2em solid @backgroundColor;
+}
+
+.sphere:hover {
+    background-color: @backgroundColor;
+    width: 10em;
+    height: 10em;
+    border-radius: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    border: 0.2em solid @backgroundColor;
+    
+    p {
+        display: inline-block;
+        color: @fontColor;
+        font-size: 3.5em;
+        margin-top: 0.6em;
+        color: @white;
+    }
+}
+
+.adoptionHeader {
+    border-bottom: 0.2em solid @backgroundColor;
+}
+
+.adoptionHeader:hover {
+  border-bottom: 0.2em solid @backgroundColor;
+  background-color: @backgroundColor;
+    #adoptionHeader {
+     color: @white;
+     font-size: 2.8em;
+     margin-bottom: 0.5em;
+  }
+}
+
+.footerCol {
+    height: 12em;
+    background-color: @backgroundColor;
+    margin-top: 4em;
+}
+
+.footerPar {
+	color: @white;
+    margin: 0.10em;
+}
+
+.footerPar:first-child {
+	margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footerPar:last-child {
+    margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.footerImg {
+    width: 10%;
+    height: 10%;
+    border-radius: 90%;
+}
+
+.footerColumns {
+    .footerImg {
+        a {
+            img {
+            border: 0.0001em solid @backgroundColor;
+            border-radius: 90%;
+            background-color: @white;
+            }
+        }
+    }
+}
+
+.footerColumns {
+    .footerImg {
+        a {
+            img:hover {
+                border: 0.0001em solid @backgroundColor;
+                border-radius: 90%;
+                background-color: @hoverColor;
+            }
+        }
+    }
+}
+
+.footerColumns {
+    .footerImg {
+	   display: inline-block;
+       margin-right: 1.5em;
+       margin-left: 1.5em;
+       margin-top: 1em;
+    }
+}
+
+
+
+
+/* -------- ID SELECTORS --------- */
+
+#navButton {
+    
+    border-radius: 0;
+    border: none !important;
+    
+    .icon-bar {
+        background-color: @white;
+        width: 1.5em;
+        height: 0.3em;
+        border-radius: none !important;
+        
+    }
+    
+}
+
+#navButton:hover {
+    
+	border: none !important;
+    background-color: @backgroundColor;
+    
+    .icon-bar {
+        background-color: @white;
+        width: 1.5em;
+        height: 0.3em;
+        border-radius: none;
+    }
+    
+}
+
+
+#bs-example-navbar-collapse-1 {
+    
+	border: none;
+    box-shadow: none !important;
+     
+    ul {
+        li {
+            a {
+                color: @white;
+            }
+        }
+    }
+}
+
+#bs-example-navbar-collapse-1 {
+	border: none;
+    box-shadow: none !important;
+     
+    ul {
+        li {
+            a:hover {
+                color: @hoverColor;
+            }
+        }
+    }
+}
+
+#imgSection {
+    border-bottom: 0.2em solid @backgroundColor;
+}
+
+#adoptionHeader {
+    color: @backgroundColor;
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+}
+
+#embededVideo {
+	display: none;
+    background-color: aqua;
+}
